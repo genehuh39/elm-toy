@@ -1,4 +1,8 @@
 {
+  "name": "elm-toy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "api.js",
   "dependencies": {
     "css-loader": "^0.28.7",
     "elm-webpack-loader": "^4.3.1",
