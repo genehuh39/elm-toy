@@ -1,5 +1,6 @@
 module Main exposing (..)
 
+import Models exposing (Model, initialModel)
 import Html exposing (..)
 
 type alias Model =
@@ -21,6 +22,10 @@ update msg model =
         UpdateRecord newName ->
          ( { model | name = newName }, Cmd.none )
 
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    Sub.none
 
 main : Program Never Model Msg
 main =
