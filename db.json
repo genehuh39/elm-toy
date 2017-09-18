@@ -1,34 +1,44 @@
 {
-  "players": [
+  "collectibles": [
     {
       "id": "2",
-      "name": "Lance",
-      "level": 1
+      "manufacturer": "Hot Toys",
+      "series": "Movie Masterpiece",
+      "name": "Iron Man Mark III",
+      "description": "1/6th Scale Figure",
+      "listPrice": 200
     },
     {
       "id": "3",
-      "name": "Aki",
-      "level": 3
+      "manufacturer": "Bandai",
+      "series": "Soul of Chogokin",
+      "name": "Voltron",
+      "description": "Die Cast Robot",
+      "listPrice": 299
     },
     {
       "id": "4",
-      "name": "Maria",
-      "level": 4
+      "manufacturer": "Bandai",
+      "series": "Soul of Robot Chogokin",
+      "name": "Mazinger Z",
+      "description": "Die Cast Robot",
+      "listPrice": 49
     },
     {
       "id": "5",
-      "name": "Julio",
-      "level": 1
+      "manufacturer": "Hot Toys",
+      "series": "Movie Masterpiece",
+      "name": "Predator",
+      "description": "1/6th Scale Figure",
+      "listPrice": 199
     },
     {
       "id": "6",
-      "name": "Julian",
-      "level": 1
-    },
-    {
-      "id": "7",
-      "name": "Jaime",
-      "level": 1
+      "manufacturer": "ThreeA",
+      "series": "World War Robot",
+      "name": "JEA Bertie Mk 3 Mode A",
+      "description": "1/6th Scale Designer Toy",
+      "listPrice": "79"
     }
   ]
 }

@@ -2,10 +2,12 @@ module Models exposing (..)
 
 import RemoteData exposing (WebData)
 
+
 type alias Model =
     { items : WebData (List Collectible)
     , route : Route
     }
+
 
 initialModel : Route -> Model
 initialModel route =
@@ -13,15 +15,20 @@ initialModel route =
     , route = route
     }
 
+
 type alias CollectibleId =
     String
 
+
 type alias Collectible =
     { id : CollectibleId
+    , manufacturer : String
+    , series : String
     , name : String
-    , description: String
-    , listPrice: Int
+    , description : String
+    , listPrice : Int
     }
+
 
 type Route
     = CollectiblesRoute
