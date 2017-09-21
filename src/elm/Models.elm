@@ -4,14 +4,14 @@ import RemoteData exposing (WebData)
 
 
 type alias Model =
-    { items : WebData (List Collectible)
+    { collectibles : WebData (List Collectible)
     , route : Route
     }
 
 
 initialModel : Route -> Model
 initialModel route =
-    { items = RemoteData.Loading
+    { collectibles = RemoteData.Loading
     , route = route
     }
 
@@ -26,7 +26,7 @@ type alias Collectible =
     , series : String
     , name : String
     , description : String
-    , listPrice : Int
+    , listPrice : Float
     }
 
 

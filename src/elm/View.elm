@@ -1,15 +1,8 @@
 module View exposing (..)
 
 import Html exposing (Html, div, h1, text)
+import Models exposing (Model)
 import Msgs exposing (Msg)
-
-
---Temp code
-
-
-type alias Model =
-    { name : String
-    }
 
 
 view : Model -> Html Msg
