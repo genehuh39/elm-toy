@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "Toy Database App built with ELM",
+    "summary": "Toy Database App built with Elm",
     "repository": "https://github.com/genehuh39/elm-toy.git",
     "license": "MIT",
     "source-directories": [
