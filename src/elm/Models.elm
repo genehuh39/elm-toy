@@ -32,5 +32,5 @@ type alias Collectible =
 
 type Route
     = CollectiblesRoute
-      --| CollectibleRoute CollectibleId
+    | CollectibleRoute CollectibleId
     | NotFoundRoute
