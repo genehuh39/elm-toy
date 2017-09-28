@@ -10,3 +10,9 @@ view : Collectible -> Html.Html Msg
 view model =
     div []
         [ text "Form" ]
+
+
+form : Collectible -> Html.Html Msg
+form collectible =
+    div []
+        [ h1 [] [ text collectible.manufacturer ] ]
