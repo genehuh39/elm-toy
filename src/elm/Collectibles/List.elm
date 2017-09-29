@@ -1,9 +1,11 @@
 module Collectibles.List exposing (..)
 
 import Html exposing (..)
+import Html.Attributes exposing (class, href)
 import Models exposing (Collectible)
 import Msgs exposing (Msg)
 import RemoteData exposing (WebData)
+import Routing exposing (collectiblePath)
 
 
 view : WebData (List Collectible) -> Html Msg
@@ -53,4 +55,18 @@ collectibleRow collectible =
         , td [] [ text collectible.manufacturer ]
         , td [] [ text collectible.series ]
         , td [] [ text collectible.name ]
+        , td [] [ editBtn collectible ]
         ]
+
+
+editBtn : Collectible -> Html.Html Msg
+editBtn collectible =
+    let
+        path =
+            collectiblePath collectible.id
+    in
+        a
+            [ class "btn regular"
+            , href path
+            ]
+            [ i [ class "fa fa-pencil mr1" ] [], text "Edit" ]
