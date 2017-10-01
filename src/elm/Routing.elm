@@ -9,7 +9,7 @@ matchers : Parser (Route -> a) a
 matchers =
     oneOf
         [ map CollectiblesRoute top
-        , map CollectibleRoute (s "collectible" </> string)
+        , map CollectibleRoute (s "collectibles" </> string)
         , map CollectiblesRoute (s "collectibles")
         ]
 
