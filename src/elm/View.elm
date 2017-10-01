@@ -58,5 +58,5 @@ collectibleEditPage model collectibleId =
 notFoundView : Html msg
 notFoundView =
     div []
-        [ text "Not found"
+        [ text "Collectible not found"
         ]
