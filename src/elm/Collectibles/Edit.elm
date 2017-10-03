@@ -19,8 +19,8 @@ view model =
 form : Collectible -> Html.Html Msg
 form collectible =
     div []
-        [ div [] [ text "Manufacturer ", input [ type_ "text", placeholder "manufacturer", value collectible.manufacturer ] [] ]
-        , div [] [ text "Series ", input [ type_ "text", placeholder "series", value collectible.series ] [] ]
-        , div [] [ text "Name", input [ type_ "text", placeholder "name", value collectible.name ] [] ]
-        , div [] [ text "List Price $", input [ type_ "text", placeholder "list price", value (toString collectible.listPrice) ] [] ]
+        [ div [] [ label [] [ text " Manufacturer " ], input [ type_ "text", placeholder "manufacturer", value collectible.manufacturer ] [] ]
+        , div [] [ label [] [ text " Series " ], input [ type_ "text", placeholder "series", value collectible.series ] [] ]
+        , div [] [ label [] [ text " Name " ], input [ type_ "text", placeholder "name", value collectible.name ] [] ]
+        , div [] [ label [] [ text "List Price $" ], input [ type_ "text", placeholder "list price", value (toString collectible.listPrice) ] [] ]
         ]
