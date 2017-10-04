@@ -34,13 +34,14 @@ maybeList response =
 list : List Collectible -> Html Msg
 list collectibles =
     div []
-        [ table []
+        [ table [ class "collapse ba br2 b--black-10 fl w-100 pa2" ]
             [ thead []
-                [ tr []
+                [ tr [ class "striped--light-gray" ]
                     [ th [] [ text "Id" ]
                     , th [] [ text "Manufacturer" ]
                     , th [] [ text "Series" ]
                     , th [] [ text "Name" ]
+                    , th [] []
                     ]
                 ]
             , tbody [] (List.map collectibleRow collectibles)
@@ -50,12 +51,12 @@ list collectibles =
 
 collectibleRow : Collectible -> Html Msg
 collectibleRow collectible =
-    tr []
-        [ td [] [ text collectible.id ]
-        , td [] [ text collectible.manufacturer ]
-        , td [] [ text collectible.series ]
-        , td [] [ text collectible.name ]
-        , td [] [ editBtn collectible ]
+    tr [ class "striped--light-gray" ]
+        [ td [ class "pv2 ph3" ] [ text collectible.id ]
+        , td [ class "pv2 ph3" ] [ text collectible.manufacturer ]
+        , td [ class "pv2 ph3" ] [ text collectible.series ]
+        , td [ class "pv2 ph3" ] [ text collectible.name ]
+        , td [ class "pv2 ph3" ] [ editBtn collectible ]
         ]
 
 
